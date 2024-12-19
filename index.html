@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Dress Customizer</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <div class="customizer-container">
+        <!-- Left Panel with 3D Skeleton GIF -->
+        <div class="left-panel">
+            <img src="./Iamge/grey.jpg" alt="3D Skeleton" class="skeleton-gif">
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <h1 class="customizer-title">3D Dress Customizer</h1>
+            <p class="customizer-description">
+                Upload images and design your perfect dress with advanced 3D customization.
+            </p>
+            <div class="customizer-card">
+                <div class="image-preview-section">
+                    <div class="image-preview" id="imagePreview1">
+                        <p>Image 1</p>
+                    </div>
+                    <div class="image-preview" id="imagePreview2">
+                        <p>Image 2</p>
+                    </div>
+                    <div class="image-preview" id="imagePreview3">
+                        <p>Image 3</p>
+                    </div>
+                </div>
+                <div class="upload-buttons">
+                    <label class="upload-btn">
+                        Front Pose
+                        <input type="file" id="imageUpload1" accept="image/*" hidden>
+                    </label>
+                    <label class="upload-btn">
+                        Back Pose
+                        <input type="file" id="imageUpload2" accept="image/*" hidden>
+                    </label>
+                    <label class="upload-btn">
+                        Side POse
+                        <input type="file" id="imageUpload3" accept="image/*" hidden>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

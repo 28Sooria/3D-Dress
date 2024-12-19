@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    color: #333;
+}
+
+/* Container Styles */
+.customizer-container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Left Panel */
+.left-panel {
+    flex: 1;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.skeleton-gif {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 10px;
+}
+
+/* Right Panel */
+.right-panel {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff;
+    color: #333;
+}
+
+.customizer-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.customizer-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.customizer-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Image Preview Section */
+.image-preview-section {
+    display: flex;
+    gap: 15px;
+}
+
+.image-preview {
+    flex: 1;
+    padding: 15px;
+    border: 1px dashed #ccc;
+    border-radius: 10px;
+    text-align: center;
+    min-height: 150px;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-preview img {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-preview:hover img {
+    transform: scale(1.1);
+}
+
+/* Upload Buttons */
+.upload-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.upload-btn {
+    padding: 12px 20px;
+    background-color: #6a11cb;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(106, 17, 203, 0.8);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.upload-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(106, 17, 203, 1);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .customizer-container {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        order: 2;
+    }
+
+    .right-panel {
+        order: 1;
+    }
+
+    .image-preview-section {
+        flex-direction: column;
+    }
+}
